@@ -7,7 +7,7 @@ import Aunty from "../Aunty/Aunty";
 const GrandPa = () => {
   const [count, setCount] = useState(0);
   const minus = () =>{
-    if(count >= 0 ){
+    if(count >= 1 ){
       setCount(count - 1 )
     }
   }
@@ -20,7 +20,7 @@ const GrandPa = () => {
         <Aunty count={count}></Aunty>
       </div>
       <button onClick={() => setCount(count + 1)}>Plus</button>
-      <button onClick={() => minus}>Minus</button>
+      <button onClick={() => minus()}>Minus</button>
     </div>
   );
 };
